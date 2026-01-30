@@ -3,11 +3,13 @@
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <resources>
-    <string name="app_name">AdPieXSample</string>
-    <string name="mid">6926c2712eb48f97c403fdd5</string>
-    <string name="interstitial_image_sid">6929178d92a14648b7f8bd84</string>
-    <string name="interstitial_video_sid">6929188d92a14648b7f8bd88</string>
-    <string name="rewarded_video_portrait_sid">6929185d92a14648b7f8bd86</string>
-    <string name="rewarded_video_landscape_sid">6929195792a14648b7f8bd8f</string>
-    <string name="native_sid">692918dd92a14648b7f8bd8b</string>
+    <string name="app_name">AdPieX-Sample-Android</string>
+    <string name="mid">697b1dd672a64a0dd10d83e0</string>
+    <string name="interstitial_image_portrait_sid">697b2bc472a64a0dd10d83e5</string>
+    <string name="interstitial_image_landscape_sid">697b63f6f9130b09098db4ae</string>
+    <string name="interstitial_video_portrait_sid">697c1217a56addbb35024bfd</string>
+    <string name="interstitial_video_landscape_sid">697c11d8a56addbb35024bfb</string>
+    <string name="rewarded_video_portrait_sid">697b64baf9130b09098db4b2</string>
+    <string name="rewarded_video_landscape_sid">697c062cf9130b09098db4b4</string>
+    <string name="native_sid">697b6421f9130b09098db4b0</string>
 </resources>

@@ -49,11 +49,7 @@ public class InterstitialAdActivity extends AppCompatActivity
         });
 
         // Insert your AdPie-Slot-ID
-        String mSlotId = getIntent().getStringExtra("image");
-
-        if (mSlotId == null) {
-            mSlotId = getIntent().getStringExtra("video");
-        }
+        String mSlotId = getIntent().getStringExtra("key");
 
         TextView tvName = (TextView) findViewById(R.id.text_app_name);
         tvName.setText(getString(R.string.app_name));

@@ -43,11 +43,7 @@ public class RewardedAdActivity extends AppCompatActivity {
         });
 
         // Insert your AdPie-Slot-ID
-        String mSlotId = getIntent().getStringExtra("portrait");
-
-        if (mSlotId == null) {
-            mSlotId = getIntent().getStringExtra("landscape");
-        }
+        String mSlotId = getIntent().getStringExtra("key");
 
         TextView tvName = (TextView) findViewById(R.id.text_app_name);
         tvName.setText(getString(R.string.app_name));
