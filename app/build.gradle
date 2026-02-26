@@ -39,7 +39,7 @@ dependencies {
     implementation 'androidx.activity:activity:1.10.1'
 
     // AdPie SDK
-    implementation 'com.github.adxcorp:adpiex-android-sdk:1.0.2'
+    implementation 'com.github.adxcorp:adpiex-android-sdk:1.0.3'
 
     // Play Services Ads Identifier (required)
     implementation 'com.google.android.gms:play-services-ads-identifier:16.0.0'
