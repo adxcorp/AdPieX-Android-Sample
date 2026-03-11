@@ -32,13 +32,10 @@ import com.gomfactory.adpie.sdk.util.AdPieLog;
 import com.gomfactory.adpiex.sample.R;
 
 import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
 
     private long lastTimeSelected = 0;
-    Timer timer = new Timer();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
