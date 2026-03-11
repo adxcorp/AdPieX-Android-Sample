@@ -12,4 +12,6 @@
     <string name="rewarded_video_portrait_sid">697b64baf9130b09098db4b2</string>
     <string name="rewarded_video_landscape_sid">697c062cf9130b09098db4b4</string>
     <string name="native_sid">697b6421f9130b09098db4b0</string>
+    <string name="preroll_video_sid">69b0d69cf28cc2ce2cad52dd</string>
+    <string name="preroll_play">Play video</string>
 </resources>

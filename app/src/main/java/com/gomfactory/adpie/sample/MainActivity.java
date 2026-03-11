@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.adpie_logo), "Rewarded Ad - Portrait", "리워드 광고 - 세로");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.adpie_logo), "Rewarded Ad - Landscape", "리워드 광고 - 가로");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.adpie_logo), "Native Ad", "네이티브 광고");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.adpie_logo), "Preroll Ad", "프리롤 광고");
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -111,6 +112,10 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 6:
                         intent = new Intent(MainActivity.this, NativeAdActivity.class);
+                        MainActivity.this.startActivity(intent);
+                        break;
+                    case 7:
+                        intent = new Intent(MainActivity.this, PrerollVideoAdActivity.class);
                         MainActivity.this.startActivity(intent);
                         break;
                 }
