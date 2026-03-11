@@ -22,15 +22,12 @@ import android.widget.Toast;
 import com.gomfactory.adpie.sdk.AdPieError;
 import com.gomfactory.adpie.sdk.AdPieSDK;
 import com.gomfactory.adpie.sdk.InterstitialAd;
-import com.gomfactory.adpie.sdk.videoads.FinishState;
-import com.gomfactory.adpie.sdk.videoads.VideoAdPlaybackListener;
 import com.gomfactory.adpiex.sample.R;
 
 public class InterstitialAdActivity extends AppCompatActivity
         implements InterstitialAd.InterstitialAdListener {
 
     public static final String TAG = InterstitialAdActivity.class.getSimpleName();
-    private static final String NO_SLOT_ID = "";
 
     private InterstitialAd interstitialAd;
 

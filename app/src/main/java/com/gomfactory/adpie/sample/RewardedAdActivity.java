@@ -31,7 +31,6 @@ public class RewardedAdActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        EdgeToEdge.enable((ComponentActivity) this);
         super.onCreate(savedInstanceState);
 
         EdgeToEdge.enable((ComponentActivity) this);
