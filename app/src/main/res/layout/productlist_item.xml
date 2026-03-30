@@ -45,7 +45,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/lbl_name"
-                    android:textSize="24dp" />
+                    android:textStyle="bold"
+                    android:textSize="18dp" />
 
                 <TextView
                     android:id="@+id/text_second"

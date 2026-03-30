@@ -57,12 +57,12 @@ public class MainActivity extends AppCompatActivity {
         ListView listview = (ListView) findViewById(R.id.listview);
         listview.setAdapter(adapter);
 
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.adpie_logo), "Interstitial Ad - Image ", "전면 광고 이미지 - 가로");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.adpie_logo), "Interstitial Ad - Video ", "전면 광고 비디오 - 가로");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.adpie_logo), "Interstitial Ad - Image Portrait ", "전면 광고 이미지 - 세로");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.adpie_logo), "Interstitial Ad - Video Portrait ", "전면 광고 비디오 - 세로");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.adpie_logo), "Rewarded Ad - Portrait", "리워드 광고 - 세로");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.adpie_logo), "Rewarded Ad - Landscape", "리워드 광고 - 가로");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.adpie_logo), "Interstitial Ad\n(Image, Landscape)", "전면 광고 (이미지, 가로)");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.adpie_logo), "Interstitial Ad\n(Image, Portrait)", "전면 광고 (이미지, 세로)");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.adpie_logo), "Interstitial Ad\n(Video, Landscape) ", "전면 광고 (비디오, 가로)");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.adpie_logo), "Interstitial Ad\n(Video, Portrait) ", "전면 광고 (비디오, 세로)");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.adpie_logo), "Rewarded Ad\n(Video, Landscape)", "리워드 광고 (비디오, 가로)");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.adpie_logo), "Rewarded Ad\n(Video, Portrait)", "리워드 광고 (비디오, 세로)");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.adpie_logo), "Native Ad", "네이티브 광고");
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -85,13 +85,13 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 1:
                         intent = new Intent(MainActivity.this, InterstitialAdActivity.class);
-                        intent.putExtra("key", getString(R.string.interstitial_video_landscape_sid));
+                        intent.putExtra("key", getString(R.string.interstitial_image_portrait_sid));
+                        intent.putExtra("orientation", "portrait");
                         MainActivity.this.startActivity(intent);
                         break;
                     case 2:
                         intent = new Intent(MainActivity.this, InterstitialAdActivity.class);
-                        intent.putExtra("key", getString(R.string.interstitial_image_portrait_sid));
-                        intent.putExtra("orientation", "portrait");
+                        intent.putExtra("key", getString(R.string.interstitial_video_landscape_sid));
                         MainActivity.this.startActivity(intent);
                         break;
                     case 3:
@@ -101,12 +101,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 4:
                         intent = new Intent(MainActivity.this, RewardedAdActivity.class);
-                        intent.putExtra("key", getString(R.string.rewarded_video_portrait_sid));
+                        intent.putExtra("key", getString(R.string.rewarded_video_landscape_sid));
                         MainActivity.this.startActivity(intent);
                         break;
                     case 5:
                         intent = new Intent(MainActivity.this, RewardedAdActivity.class);
-                        intent.putExtra("key", getString(R.string.rewarded_video_landscape_sid));
+                        intent.putExtra("key", getString(R.string.rewarded_video_portrait_sid));
                         MainActivity.this.startActivity(intent);
                         break;
                     case 6:
