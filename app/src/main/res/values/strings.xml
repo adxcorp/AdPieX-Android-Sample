@@ -4,7 +4,9 @@
 
 <resources>
     <string name="app_name">AdPieX-Sample-Android</string>
+    <string name="splash_loading">Loading ...</string>
     <string name="mid">697b1dd672a64a0dd10d83e0</string>
+    <string name="app_open_sid">6af43d6dbbfa519f16c5f25e</string>
     <string name="interstitial_image_portrait_sid">697b2bc472a64a0dd10d83e5</string>
     <string name="interstitial_image_landscape_sid">697b63f6f9130b09098db4ae</string>
     <string name="interstitial_video_portrait_sid">697c1217a56addbb35024bfd</string>

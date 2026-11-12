@@ -17,7 +17,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,8 +26,6 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.gomfactory.adpie.sdk.AdPieSDK;
-import com.gomfactory.adpie.sdk.util.AdPieLog;
 import com.gomfactory.adpiex.sample.R;
 
 import java.util.ArrayList;
@@ -47,11 +44,6 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        // Insert your AdPie-Media-ID
-        AdPieLog.setLogEnable(true);
-        AdPieLog.setLogLevel(Log.DEBUG);
-        AdPieSDK.getInstance().initialize(getApplicationContext(), getString(R.string.mid));
 
         ListViewAdapter adapter = new ListViewAdapter();
         ListView listview = (ListView) findViewById(R.id.listview);
